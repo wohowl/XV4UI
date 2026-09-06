@@ -321,7 +321,7 @@ end
 --// Files helper \\--
 local function GetConfigPath(ConfigName: string): false | string
     local CurrentSettingsPath = GetCurrentSettingsPath()
-    return if CurrentSettingsPath == false then false else string.format("%s/%s.json", CurrentSettingsPath, ConfigName)
+    return if CurrentSettingsPath == false then false else string.format("%s/%s.wohowl", CurrentSettingsPath, ConfigName)
 end
 
 local function DoesConfigExist(ConfigName: string): boolean
